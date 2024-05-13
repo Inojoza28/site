@@ -1,0 +1,134 @@
+/* Estilos para o Modo Escuro */
+.dark-mode {
+    background-color: #222;
+    color: #fff;
+  }
+  
+  .dark-mode .navbar {
+    background-color: #333 !important;
+  }
+  
+  .dark-mode .navbar-nav .nav-link {
+    color: #fff !important;
+  }
+  
+  .dark-mode .navbar-toggler-icon {
+    filter: invert(1);
+  }
+  
+  .dark-mode .navbar-nav .nav-link:hover {
+    color: #ccc !important;
+  }
+  
+  .dark-mode .btn-dark {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+  }
+  
+  .dark-mode .btn-dark:hover {
+    background-color: #23272b;
+    border-color: #1d2124;
+  }
+  
+  .dark-mode .jumbotron {
+    background-color: #343a40;
+    color: #fff;
+  }
+  
+  .dark-mode .card {
+    background-color: #343a40;
+    color: #fff;
+    border-color: #444;
+  }
+  
+  .dark-mode .card-title {
+    color: #fff;
+  }
+  
+  .dark-mode .card-text {
+    color: #ccc;
+  }
+  
+  .dark-mode .footer {
+    background-color: #333 !important;
+    color: #fff;
+  }
+  
+  .dark-mode .footer a {
+    color: #fff;
+  }
+  
+  .dark-mode .footer a:hover {
+    color: #ccc;
+  }
+  
+  .dark-mode .navbar-brand {
+    color: #fff !important;
+  }
+  
+  .dark-mode .footer .text-muted {
+    color: #fff;
+  }
+  
+
+/* BOTÃO DARK */
+
+/* The switch - the box around the slider */
+.switch {
+    display: block;
+    --width-of-switch: 3.5em;
+    --height-of-switch: 2em;
+    /* size of sliding icon -- sun and moon */
+    --size-of-icon: 1.4em;
+    /* it is like a inline-padding of switch */
+    --slider-offset: 0.3em;
+    position: relative;
+    width: var(--width-of-switch);
+    height: var(--height-of-switch);
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #dbdbdb;
+    transition: .4s;
+    border-radius: 30px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: var(--size-of-icon,1.4em);
+    width: var(--size-of-icon,1.4em);
+    border-radius: 20px;
+    left: var(--slider-offset,0.3em);
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(40deg,#ff0080,#ff8c00 70%);
+    ;
+   transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #1c1c1f;
+  }
+  
+  input:checked + .slider:before {
+    left: calc(100% - (var(--size-of-icon,1.4em) + var(--slider-offset,0.3em)));
+    background: #303136;
+    /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
+    box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+  }
