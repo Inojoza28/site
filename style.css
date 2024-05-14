@@ -182,6 +182,7 @@ html{
   
   .footer p {
     font-size: 15px; /* Tamanho da fonte do parágrafo */
+    color: #fff;
   }
   
   .footer ul {
@@ -195,7 +196,7 @@ html{
 
   .footer a {
    text-decoration: none;
-   color: #e4e3e3;
+   color: #fdfdfd;
   }
 
   .footer a:hover {
