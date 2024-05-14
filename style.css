@@ -260,3 +260,13 @@ html{
     font-size: 16px; /* Ajuste o tamanho da fonte do botão para telas menores */
   }
 }
+
+/* Estilos para os cards de destaque */
+.highlight-card {
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Animação ao passar o mouse sobre os cards */
+.highlight-card:hover {
+  transform: translateY(-8px);
+}
