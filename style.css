@@ -1,3 +1,30 @@
+body{
+  background-color: #f8f9fa;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.sobre{
+  font-size: 18px;
+}
+
+.navbar {
+  min-height: 10px; /* Defina a altura desejada aqui */
+}
+
+.navbar-custom {
+  background-color: #bebebe; /* Cor de fundo desejada */
+  color: #1c1c1f;
+}
+
+.btn-sm {
+  padding: 5px 8px; /* Ajuste o padding para alterar o tamanho do botão */
+  font-size: 14px; /* Altere o tamanho da fonte do botão */
+}
+
+
 /* Estilos para o Modo Escuro */
 .dark-mode {
     background-color: #222;
@@ -42,12 +69,17 @@
     border-color: #444;
   }
   
+  
   .dark-mode .card-title {
     color: #fff;
   }
   
   .dark-mode .card-text {
     color: #ccc;
+  }
+
+  .dark-mode .my-4 {
+    background-color: #cccccc33;
   }
   
   .dark-mode .footer {
@@ -133,3 +165,97 @@
     /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
     box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
   }
+
+  /* Espaçamento no footer */
+  .footer {
+    background-color: #8f8e8e; /* Cor de fundo */
+    color: #ffffff; /* Cor do texto */
+    padding-top: 30px; /* Espaçamento interno superior */
+    padding-bottom: 30px; /* Espaçamento interno inferior */
+    width: 100%; /* Largura total */
+    border-radius: 14px;
+  }
+  
+  .footer h5 {
+    color: #ffffff; /* Cor do título */
+  }
+  
+  .footer p {
+    font-size: 15px; /* Tamanho da fonte do parágrafo */
+  }
+  
+  .footer ul {
+    list-style: none; /* Remover marcadores de lista */
+    padding-left: 0; /* Remover o recuo padrão */
+  }
+  
+  .footer ul li {
+    margin-bottom: 10px; /* Espaçamento entre itens da lista */
+  }
+
+  .footer a {
+   text-decoration: none;
+   color: #e4e3e3;
+  }
+
+  .footer a:hover {
+    color: #4d4d4d; /* Cor dos ícones de redes sociais ao passar o mouse */
+  }
+  
+  .social-icon {
+    color: #ffffff; /* Cor dos ícones de redes sociais */
+    font-size: 20px; /* Tamanho dos ícones de redes sociais */
+    margin-right: 10px; /* Espaçamento entre os ícones */
+  
+  }
+  
+  .social-icon:hover {
+    color: #007bff; /* Cor dos ícones de redes sociais ao passar o mouse */
+  }
+  
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px; /* Altere o tamanho da fonte para telas menores */
+  }
+  h2 {
+    font-size: 19px; /* Altere o tamanho da fonte para telas menores */
+  }
+  p {
+    font-size: 18px; /* Altere o tamanho da fonte para telas menores */
+  }
+  .sobre{
+    font-size: 18px; /* Altere o tamanho da fonte para telas menores */
+    text-align: justify;
+  }
+  .navbar-brand {
+    font-size: 24px; /* Ajuste o tamanho da fonte para telas menores */
+    font-weight: bold;
+  }
+  .display-4{
+   font-size: 24px;
+   font-weight: bold;
+  }
+ /* Estilo para a seção "Sobre" */
+#sobre {
+  padding: 20px;
+  background-color: #ebebebbd; /* Cor de fundo */
+  border-radius: 5px; /* Borda arredondada */
+  margin-bottom: 20px; /* Espaçamento inferior */
+  text-align: justify;
+  
+}
+.dark-mode #sobre {
+  background-color: #2b2d30;
+}
+
+
+}
+
+@media (max-width: 576px) {
+  .btn {
+    padding: 8px 12px; /* Ajuste o padding para tornar o botão menor */
+    font-size: 16px; /* Ajuste o tamanho da fonte do botão para telas menores */
+  }
+}
